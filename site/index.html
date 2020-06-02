@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<h1>Сервер по распознаванию капчи</h1>
+	<h4>Сервис создан как часть проекта по Производственной практике(УИР) </h4>
+
+		<form enctype = "multipart/form-data" action="/cgi-bin/obrabotka.py" method="post">
+		 <div>
+		   <label for="file">Для распознавания капчи выберите изображение для загрузки. Обратите внимание, что файл не должен быть слишком большим. </label>
+		   <br/><br>
+		   <input type="file" name="filename" accept=".jpg, .jpeg, .png">
+		 </div>
+		 <div>
+		   <br/><br>
+		   <button>Распознать</button>
+		 </div>
+		</form>
+
+
+</body>
+</html>
